@@ -52,6 +52,7 @@ function takePhoto() {
 }
 
 function redEffect(pixels) {
+  console.log('pixels here', pixels);
   for (let i = 0; i < pixels.data.length; i += 4) {
     pixels.data[i + 0] = pixels.data[i + 0] + 100;
     pixels.data[i + 1] = pixels.data[i + 1]  - 50;
