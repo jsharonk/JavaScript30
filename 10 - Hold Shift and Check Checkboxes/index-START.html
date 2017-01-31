@@ -113,7 +113,7 @@
     if (e.shiftKey && this.checked) {
       //loop over every single checkbox
       checkboxes.forEach(checkbox => {
-        console.log(checkbox);
+        console.log('checkbox==> ', checkbox);
         if (checkbox === this || checkbox === lastChecked) {
           inBetween= !inBetween;
           console.log('starting to check them inbetween');
@@ -124,6 +124,7 @@
       });
     }
     lastChecked = this;
+    console.log('lastChecked ===>', lastChecked);
    }
   checkboxes.forEach(checkbox => {
     checkbox.addEventListener('click', handleCheck);

@@ -34,7 +34,8 @@ function scrub(e) {
 }
 
 function updateButton() {
-  const icon = this.paused ? '►' : '❚ ❚';
+  // const icon = this.paused ? '►' : '❚ ❚';
+    const icon = this.paused ? '►' : '&#9613';
   toggle.textContent = icon;
   console.log(icon);
 } 
